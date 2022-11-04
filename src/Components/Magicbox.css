@@ -1,0 +1,101 @@
+.magicbox {
+  padding: 130px 7%;
+  background-image: url(http://www.themezaa.com/html/pofo/images/pofo-magic-box-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.magicboxcontent {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.magicboxcontent > h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.magicboxcontent > p {
+  color: #6f6f6f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.magicbox > .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.magic-col {
+  width: 25%;
+}
+
+.box {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.box-content {
+  transform: translateY(20px);
+  transition: all 0.5s;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.box:hover > .box-content {
+  transform: translateY(-10px);
+}
+
+.box:hover > .box-content > p {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.box-content > span {
+  font-size: 25px;
+  font-weight: 300;
+  color: #ff214f;
+  line-height: 30px;
+}
+
+.box-content > h1 {
+  color: #232323;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.box-content > p {
+  color: #6f6f6f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0;
+  transform: translateY(20px);
+  margin-top: 20px;
+}
+
+.mt--1 {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1120px) {
+  .magicbox > .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .magic-col {
+    width: 100%;
+  }
+}

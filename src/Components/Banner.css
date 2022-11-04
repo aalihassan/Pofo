@@ -1,0 +1,102 @@
+.banner {
+  background: url('http://www.themezaa.com/html/pofo/images/pofo-demo-parallax.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.banner-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.banner-text {
+  padding-top: 250px;
+}
+
+.text-startside-line {
+  position: relative;
+  padding-left: 35px;
+}
+
+.text-medium-gray {
+  color: #939393;
+}
+
+.text-startside-line:before {
+  border-top: 1px solid;
+  content: '';
+  height: 0;
+  left: auto;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 25px;
+  opacity: 0.7;
+}
+
+.heading-text {
+  color: white;
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.explore-btn {
+  background-color: transparent;
+  color: #ff214f;
+  border: 2px solid #ff214f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.explore-btn:hover {
+  color: #fff;
+  background-color: #ff214f;
+}
+
+.explore-btn > svg {
+  fill: #ff214f;
+  transition: all 0.5s;
+  margin-top: -2px;
+}
+
+.explore-btn:hover > svg {
+  fill: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    padding-left: 100px;
+    background: linear-gradient(rgb(28, 28, 28, 0.7), rgb(28, 28, 28, 0.7)),
+      url('http://www.themezaa.com/html/pofo/images/pofo-demo-parallax.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* .banner {
+    width: 100%;
+  } */
+  .heading-text {
+    font-size: 30px;
+  }
+}
